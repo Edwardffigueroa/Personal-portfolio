@@ -1,7 +1,33 @@
 @font-face {
-   font-family: myFirstFont;
+   font-family: futuraBold;
+    src: url('fonts/futura/futuraBold.ttf');  
+
    
 }
+
+@font-face {
+   font-family: futuramediumitalic;
+    src: url('fonts/futura/FuturaMediumItalicfont.ttf');  
+
+   
+}
+@font-face {
+   font-family: futuramedium;
+    src: url('fonts/futura/futuramediumbt.ttf');
+   
+}
+@font-face {
+   font-family: condensed;
+    src: url('fonts/futura/futuramediumcondensedbt.ttf');
+   
+}
+
+/*
+bod
+medium italic
+medium
+condesedmedium
+*/
 
 
 
@@ -10,7 +36,10 @@
      
     margin: 0px;
     padding: 0px;
-    font-family: 'futura', 'helvetica';
+    
+/*     font-family: myFirstFont;*/
+    font-family: 'helvetica';
+    
 /*   font-family: 'myFirstFont';*/
     
 }
@@ -49,8 +78,16 @@
 .main #home h1{
     
     color: white;
+       font-family: futuramediumitalic, helvetica;
+    font-weight: 100;
+    
 
     
+}
+
+.main #home h1 b{
+     font-family: futuramedium, helvetica;
+    font-weight: 700;
 }
 
 
@@ -99,6 +136,7 @@ header .topMenu .menuIcon{
 header a{
     color: white;
     text-decoration: none;
+    font-family: futuramedium,helvetica;
 }
 
 header .topMenu .menuIcon img{ 
@@ -160,6 +198,7 @@ header p{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    
 /*    align-items: center*/
     
 }
@@ -168,6 +207,9 @@ header p{
     
     font-size: 4em;
     
+}
+.textBanner p{
+font-family: futuramediumitalic, helvetica;
 }
 
 .textBanner .line{
@@ -178,6 +220,7 @@ header p{
 .textBanner .textBanner_left{
     text-align: right;
     padding: 10px;
+    
 }
 
 .textBanner .textBanner_right{
@@ -240,9 +283,13 @@ header p{
     
 }
 
+.list_container h3{
+    font-family: futuramedium,helvetica;
+}
 .list_container p{
     color: white;
     text-align: center;
+    font-family: futuramediumitalic,helvetica;
     
 }
 .list_container img{
@@ -400,7 +447,14 @@ justify-content: center;
 .bg_images .info p {
     width: 60%;
     margin: 5px;
+    font-family: futuramedium,helvetica;
+    font-weight: 100;
     
+}
+
+.bg_images .info p b {
+    font-family: futuramediumitalic,helvetica;
+    font-weight: 100;
     
 }
 
@@ -414,6 +468,10 @@ justify-content: center;
     align-items: center;
     
 }
+.skills_container .skill h3{
+font-family: futuramedium, helvetica;
+}
+
 .skills_container .skill{
     
     border-left: solid;
@@ -477,6 +535,7 @@ justify-content: center;
     font-size: 2em;
     text-align: center;
     margin: 10px;
+    font-family: futuramediumitalic,helvetica;
     
 }
 
@@ -491,6 +550,7 @@ justify-content: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    
 /*    align-items: center;*/
 }
 
@@ -514,10 +574,12 @@ justify-content: center;
     text-decoration: none;
     
     margin: 10px;
+    font-family: futuramedium,helvetica;
 }
 
 .textContact p{
     margin: 10px;
+    font-family: futuramedium,helvetica;
     
 }
 
@@ -534,6 +596,7 @@ justify-content: center;
 #contact>p{
     text-align: center;
     margin: 15px;
+    font-family: futuramedium,helvetica;
     
 }
 #contact>img{
