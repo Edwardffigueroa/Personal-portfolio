@@ -1,7 +1,17 @@
+@font-face {
+   font-family: myFirstFont;
+   
+}
+
+
+
+
 *{
+     
     margin: 0px;
     padding: 0px;
-    font-family: 'helvetica';
+    font-family: 'futura', 'helvetica';
+/*   font-family: 'myFirstFont';*/
     
 }
 
@@ -37,7 +47,9 @@
 }
 
 .main #home h1{
+    
     color: white;
+
     
 }
 
@@ -48,7 +60,7 @@ header{
     height: 100vh;
     position: fixed;
     display: flex;
-    
+    z-index: 9000;
     pointer-events: none;
     flex-flow: column nowrap;
     justify-content:space-between;
@@ -218,7 +230,11 @@ header p{
 /*        overflow-y:scroll;*/
 
     width: 90%;
+    height: 90%;
     text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
     
 /*    background-color: gray;*/
     
@@ -230,76 +246,92 @@ header p{
     
 }
 .list_container img{
-    width: 30%;
-
-    
-}
-
-/* The Modal (background) */
-.modal {
-    
-    
-    
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-/*    overflow: auto; */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    
-    background-color: rgba(0,0,0,.3); 
-/*    margin: 15% auto; */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 98%; 
-    height: 100vh;
-    overflow: scroll;
-    
-}
-
-
-
-/* The Close Button */
-.close {
-    color: #aaa;
-/*    float: right;*/
-    font-size: 28px;
-    font-weight: bold;
-    position: fixed;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-content .detailContent {
     
     width: 100%;
+    height: 100%;
+/*      height: auto;*/
+    
+}
+/*-------------flip---------*/
+.flip-box {
+    
+  background-color: transparent;
+/*  width: 300px;*/
+    width: 30%;
+   height: 200px;
+/*  border: 1px solid #f1f1f1;*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-box-inner {
+/*  position: relative;*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: black;
+  color: white;
+
+    border: 1px solid #f1f1f1;
+  transform: rotateY(180deg);
+/*    padding: 5px;*/
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-/*    overflow: auto;*/
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flip-box-back img {
+    width: 10%;
+    height: 100%;
+    margin-left: 5px;
+    
     
 }
 
-.modal-content .detailContent img{
-    width: 80%;
-    height: 100%;
+.flip-box-back .iconviewp {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    padding:10px 5px;
+    border: 1px solid #f1f1f1;    
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.flip-box-back .iconviewp:hover {
+    transition: 0.5s;
+    background-color: darkslategray;
+    
 }
 
 
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-back {
+  transform: rotateX(180deg);
+}
 
 
 /*---------------about---------------*/
@@ -394,7 +426,19 @@ justify-content: center;
 .skills_container .skill img{
 /*    height: 40px;;*/
     margin: 5px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.5;    
+    transition: 0.5s;
     
+}
+
+.skills_container .skill img:hover{
+      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity: 1.5;    
+        transition: 0.5s;
+
 }
 
 /*---------------contact---------------*/
