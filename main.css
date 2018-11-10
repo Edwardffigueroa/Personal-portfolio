@@ -1,25 +1,25 @@
 @font-face {
-   font-family: futuraBold;
+    font-family: futuraBold;
     src: url('fonts/futura/futuraBold.ttf');  
 
-   
+
 }
 
 @font-face {
-   font-family: futuramediumitalic;
+    font-family: futuramediumitalic;
     src: url('fonts/futura/FuturaMediumItalicfont.ttf');  
 
-   
+
 }
 @font-face {
-   font-family: futuramedium;
+    font-family: futuramedium;
     src: url('fonts/futura/futuramediumbt.ttf');
-   
+
 }
 @font-face {
-   font-family: condensed;
+    font-family: condensed;
     src: url('fonts/futura/futuramediumcondensedbt.ttf');
-   
+
 }
 
 /*
@@ -33,83 +33,84 @@ condesedmedium
 
 
 *{
-     
+
     margin: 0px;
     padding: 0px;
-    
-/*     font-family: myFirstFont;*/
+
+    /*     font-family: myFirstFont;*/
     font-family: 'helvetica';
-    
-/*   font-family: 'myFirstFont';*/
-    
+
+    /*   font-family: 'myFirstFont';*/
+
 }
 
 .main{
-    
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
 
-    
+
 }
 
 .main #home {
-    
+
     width: 100%;
-   height: 100vh;
+    height: 100vh;
     background-color: #004679;
-/*    opacity: 0.6;*/
+    /*    opacity: 0.6;*/
     background-image: url(images/backhome.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    
-    
+
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    
-    
+
+
 }
 
 .main #home h1{
-    
-    color: white;
-       font-family: futuramediumitalic, helvetica;
-    font-weight: 100;
-    
 
-    
+    color: white;
+    font-family: futuramediumitalic, helvetica;
+    font-weight: 100;
+
+
+
 }
 
 .main #home h1 b{
-     font-family: futuramedium, helvetica;
+    font-family: futuramedium, helvetica;
     font-weight: 700;
 }
 
 
 header{
-    
+
     width: 100%;
     height: 100vh;
     position: fixed;
     display: flex;
-    z-index: 9000;
+    /*    z-index: 2000;*/
     pointer-events: none;
     flex-flow: column nowrap;
     justify-content:space-between;
     align-items: center;
-    
-    
-/*    margin: 15px;*/
-    
+
+
+    /*    margin: 15px;*/
+
 }
 
 header .topMenu{
-    
+
+
     width: 95%;
     display: flex;
     flex-direction: row;
@@ -117,34 +118,39 @@ header .topMenu{
     justify-content: space-between;
     margin-top: 10px;
     align-items: center;
-     pointer-events: visible ;
+    pointer-events: visible ;
     !important;
     background-color: rgba(0,0,0,0.3);
-/*    background-color: rgba(0,0,0,0.8);*/
-    
-    
+    /*    background-color: rgba(0,0,0,0.8);*/
+
+
 }
 
 header .topMenu .menuIcon{
-    
-    
- display: flex;
- flex-flow: row nowrap;
-    
+
+
+    display: flex;
+    flex-flow: row nowrap;
+
 }
 
 header a{
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: futuramedium,helvetica;
 }
 
+header a:hover{
+    color: deepskyblue;
+
+}
+
 header .topMenu .menuIcon img{ 
- width: 100%;
+    width: 100%;
 }
 
 header .downMenu{
-    
+
     margin-bottom: 10px;
     pointer-events: visible ;
     width: 95%;
@@ -153,13 +159,13 @@ header .downMenu{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 header .downMenu .iconsDownMenu a {
     margin: 5px;
     width: 10%;
-    
+
 }
 
 header .downMenu .iconsDownMenu a img {
@@ -172,7 +178,7 @@ header .downMenu .mouseDownMenu{
     flex-flow: row nowrap;
     align-items: center;
     color: white;
-    
+
 }
 header .downMenu .mouseDownMenu p{
     margin: 5px;
@@ -191,47 +197,47 @@ header p{
 
 
 .textBanner{
-    
+
     width: 70%;
-    
+
     color: white;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
-/*    align-items: center*/
-    
+
+    /*    align-items: center*/
+
 }
 
 .textBanner h1{
-    
+
     font-size: 4em;
-    
+
 }
 .textBanner p{
-font-family: futuramediumitalic, helvetica;
+    font-family: futuramediumitalic, helvetica;
 }
 
 .textBanner .line{
     width: 2px;
-    
+
     background-color: white;
 }
 .textBanner .textBanner_left{
     text-align: right;
     padding: 10px;
-    
+
 }
 
 .textBanner .textBanner_right{
-    
-/*    height: 100px;*/
-    
+
+    /*    height: 100px;*/
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     padding: 10px;
-    
+
 }
 .textBanner .textBanner_right p{
     line-height: 30px;
@@ -240,14 +246,14 @@ font-family: futuramediumitalic, helvetica;
 /*---------------portafolio---------------*/
 
 #portfolio{
-    
+
     width: 100%;
     height: 100vh;
     background-color: black;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    
+
     align-items: center;
 }
 #portfolio>img {
@@ -258,29 +264,31 @@ font-family: futuramediumitalic, helvetica;
 .selector_container{
     width: 100%;
     height: 80vh;
-/*    background-color: gray;*/
+    /*    background-color: gray;*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
 
 .list_container{
-    
-/*    overflow: scroll;*/
-/*        overflow-y:scroll;*/
+
+    /*    overflow: scroll;*/
+    /*        overflow-y:scroll;*/
 
     width: 90%;
     height: 90%;
     text-align: center;
+    /*
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    
-/*    background-color: gray;*/
-    
+    */
+
+    /*    background-color: gray;*/
+
 }
 
 .list_container h3{
@@ -290,54 +298,53 @@ font-family: futuramediumitalic, helvetica;
     color: white;
     text-align: center;
     font-family: futuramediumitalic,helvetica;
-    
+
 }
 .list_container img{
-    
-    width: 100%;
-    height: 100%;
-/*      height: auto;*/
-    
+
+    width: 30%;
+    /*    height: 100%;*/
+    /*      height: auto;*/
+
+
+    opacity: 1.5;    
+    transition: 0.5s;
+
+}
+
+.list_container img:hover{
+
+
+
+    opacity: 0.5;    
+    transition: 0.5s;
+
 }
 /*-------------flip---------*/
-.flip-box {
-    
-  background-color: transparent;
-/*  width: 300px;*/
-    width: 30%;
-   height: 45%;
-/*  border: 1px solid #f1f1f1;*/
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+.modal-content{
+    background-color: black;
+    color: white;
+    border: 1px solid #f1f1f1;
+}
+.modal-content .close{
+    color: white;
+
 }
 
-.flip-box-inner {
-/*  position: relative;*/
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.modal-body{
+    margin: 0px;
+    padding: 0px;
 }
 
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-box-front {
-  
-  color: black;
-}
 
 .flip-box-back {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
 
-    border: 1px solid #f1f1f1;
-  transform: rotateY(180deg);
-/*    padding: 5px;*/
+
+    /*    padding: 5px;*/
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -348,8 +355,8 @@ font-family: futuramediumitalic, helvetica;
     width: 10%;
     height: 100%;
     margin-left: 5px;
-    
-    
+
+
 }
 
 .flip-box-back .iconviewp {
@@ -359,50 +366,44 @@ font-family: futuramediumitalic, helvetica;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 30%;
     padding:10px 5px;
     border: 1px solid #f1f1f1;    
     border-radius: 5px;
     transition: 0.5s;
+    margin: 5px;
 }
-.flip-box-back .iconviewp:hover {
-    transition: 0.5s;
-    background-color: darkslategray;
-    
+
+.modalImage img{
+
+    width: 100%;
 }
 
 
-.flip-box:hover .flip-box-inner {
-  transform: rotateX(180deg);
-}
-
-.flip-box-back {
-  transform: rotateX(180deg);
-}
 
 
 /*---------------about---------------*/
 #about-me{
-    
+
     width: 100%;
     height: 100vh;
     background-color: black;
-    
+
 }
 
 .bg_images{
-    
-    
-   width: 100%;
-   height: 60vh;
-    
-/*    opacity: 0.6;*/
+
+
+    width: 100%;
+    height: 60vh;
+
+    /*    opacity: 0.6;*/
     background-image: url(images/bg_about.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -412,37 +413,37 @@ font-family: futuramediumitalic, helvetica;
 .bg_images >img{
     width: 30%;
     margin-bottom: 30px;
-    
+
 }
 
 .bg_images .info{
-    
+
     width: 60%;
-    
+
     display: flex;
     flex-flow: row nowrap;
-justify-content: center;
+    justify-content: center;
     align-items: center;
     color: white;
-    
-    
+
+
 }
 
 
 
 .bg_images .info .networks{
-    
-    
+
+
     display: flex;
     flex-flow: column nowrap;
-    
+
 }
 
 .bg_images .info .networks img{
     margin: 5px;
-    
-    
-    
+
+
+
 }
 
 .bg_images .info p {
@@ -450,13 +451,13 @@ justify-content: center;
     margin: 5px;
     font-family: futuramedium,helvetica;
     font-weight: 100;
-    
+
 }
 
 .bg_images .info p b {
     font-family: futuramediumitalic,helvetica;
     font-weight: 100;
-    
+
 }
 
 
@@ -467,14 +468,14 @@ justify-content: center;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 .skills_container .skill h3{
-font-family: futuramedium, helvetica;
+    font-family: futuramedium, helvetica;
 }
 
 .skills_container .skill{
-    
+
     border-left: solid;
     border-left-color: white;
     border-left-width: 1px;
@@ -483,20 +484,20 @@ font-family: futuramedium, helvetica;
     width: 40%;
 }
 .skills_container .skill img{
-/*    height: 40px;;*/
+    /*    height: 40px;;*/
     margin: 5px;
-      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     opacity: 0.5;    
     transition: 0.5s;
-    
+
 }
 
 .skills_container .skill img:hover{
-      -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
     opacity: 1.5;    
-        transition: 0.5s;
+    transition: 0.5s;
 
 }
 
@@ -506,30 +507,30 @@ font-family: futuramedium, helvetica;
     width: 100%;
     height: 100vh;
     color: white;
-    
-/*    background-color: #004679;*/
-/*    opacity: 0.6;*/
+
+    /*    background-color: #004679;*/
+    /*    opacity: 0.6;*/
     background-image: url(images/backhome.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    
-    
+
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
 
 .thanks{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
+
+
 }
 
 .thanks p{
@@ -537,29 +538,29 @@ font-family: futuramedium, helvetica;
     text-align: center;
     margin: 10px;
     font-family: futuramediumitalic,helvetica;
-    
+
 }
 
 .thanks img{
     width: 80%;
-    
+
     margin: 10px;
-    
+
 }
 
 .contact_container{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
-/*    align-items: center;*/
+
+    /*    align-items: center;*/
 }
 
 .contact_container .line{
-    
+
     width: 2px;
     background-color: white;
-    
+
 }
 
 .textContact{
@@ -568,12 +569,12 @@ font-family: futuramedium, helvetica;
     justify-content: center;
 }
 .textContact a{
-    
+
     font-weight: 700;
     font-size: 1.5em;
     color: white;
     text-decoration: none;
-    
+
     margin: 10px;
     font-family: futuramedium,helvetica;
 }
@@ -581,118 +582,129 @@ font-family: futuramedium, helvetica;
 .textContact p{
     margin: 10px;
     font-family: futuramedium,helvetica;
-    
+
 }
 
 .textContact .networks{
     margin: 10px;
-    
+
 }
 
 .textContact .networks img{
     margin: 5px;
-    
+
 }
 
 #contact>p{
     text-align: center;
     margin: 15px;
     font-family: futuramedium,helvetica;
-    
+
 }
 #contact>img{
     width: 50px;
-    
+
 }
 
 @media only screen and (max-width: 600px) {
-    
+
+    .list_container >img{
+
+        width: 100%;
+        margin: 5px;
+        /*    height: 100%;*/
+        /*      height: auto;*/
+
+    }
+
+
+
     .textBanner h1{
-    
-    font-size: 2.5em;
-    
-}
-    
+
+        font-size: 2.5em;
+
+    }
+
     .textBanner {
         width: 100%;
     }
-    
+
     #home{
         justify-content: center;
     }
-    
+
     .textBanner_right{
         display: none;
     }
-    
-/*    portafolio*/
+
+    /*    portafolio*/
     #portfolio{
         height: auto;
         overflow: auto;
     }
-    
+
     #portfolio>img{
         width: 80%;
-    margin-bottom: 30px;
+        margin-bottom: 30px;
     }
-    
+
     .flip-box {
         width: 90%;
     }
-    
+
     .bg_images >img{
-    width: 80%;
-    margin: 30px;
-    
-}
-    
+        width: 80%;
+        margin: 30px;
+
+    }
+
     .info .networks img{
-        
+
         display: none;
     }
-    
+
     .info>img {
         width: 50%;
-        
+
     }
     .info{
-        
+
         width: 100%;
         height: 100%;
-        
+
         flex-flow: column wrap;
     }
-    
+
     .bg_images{
         width: 100%;
         height: 100%;
-        
+
     }
-    
+
     .info p{
         width: 100%;
         height: 100%;
     }
-    
+
     .skills_container{
         display: none;
     }
-    
-/*    contact*/
-    
+
+    /*    contact*/
+
     .line{
         display: none;
     }
-    
+
     .contact_container> img{
         display: none;
-        
+
     }
     .contact_container> p{
         display: none;
     }
-    
-    
 
-    
+
+
+
 }
